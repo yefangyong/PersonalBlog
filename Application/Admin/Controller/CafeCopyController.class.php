@@ -21,36 +21,11 @@ class CafeCopyController extends CommonController {
             if(!isset($_POST['pic']) || !$_POST['pic']) {
                 return show(0,'上传图片不得为空!');
             }
-
-            if(!isset($_POST['depict']) || !$_POST['depict']) {
-                return show(0,'描述不得为空!');
-            }
-            if(!isset($_POST['ydepict']) || !$_POST['ydepict']) {
-                return show(0,'英文描述不得为空!');
-            }
-            if(!isset($_POST['names']) || !$_POST['names']) {
-                return show(0,'网名不得为空!');
-            }
-            if(!isset($_POST['occupation']) || !$_POST['occupation']) {
-                return show(0,'职业描述不得为空!');
-            }
-            if(!isset($_POST['place']) || !$_POST['place']) {
-                return show(0,'籍贯不得为空!');
-            }
-            if(!isset($_POST['tel']) || !$_POST['tel']) {
-                return show(0,'电话不得为空!');
-            }
-            if(!isset($_POST['email']) || !$_POST['email']) {
-                return show(0,'email不得为空!');
-            }
-            if(!isset($_POST['content']) || !$_POST['content']) {
-                return show(0,'详细内容不得为空!');
-            }
             if($_POST['id']) {
                 return $this->save($_POST);
             }
-            $aboutId = D('About')->insert($_POST);
-            if($aboutId) {
+            $rel = D('About')->insert($_POST);
+            if($rel) {
                 return show(1,'新增成功!');
             }else{
                 return show(0,'新增失败!');

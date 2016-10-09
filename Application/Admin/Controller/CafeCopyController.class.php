@@ -61,28 +61,6 @@ class CafeCopyController extends CommonController {
 
     }
 
-    //异步上传图片
-    public function ajaxuploadimage() {
-        $upload = D('UploadImage');
-        $res = $upload->imageUpload('about');
-        if($res === false) {
-            return show(0,'图片上传失败!');
-        }else{
-            return show(1,'图片上传成功!',$res);
-        }
-    }
-
-    //异步上传富文本的数据，调用tp自带的upload类
-    public function kindupload(){
-        $upload=D('UploadImage');
-        $res=$upload->upload('about');
-        if($res === false){
-            return showkind(1,'上传失败');
-        }else{
-            return showkind(0,$res);
-        }
-    }
-
     //更新
     public function save($data=array()) {
       $res = D('About')->updateAboutById($data);

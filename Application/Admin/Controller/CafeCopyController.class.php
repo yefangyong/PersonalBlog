@@ -71,13 +71,6 @@ class CafeCopyController extends CommonController {
         }
     }
 
-    //修改
-    public function edit() {
-        $list = D('About')->getAboutListById();
-        $this->assign('list',$list);
-        $this->assign('type','关于我');
-        $this->display();
-    }
 
     //删除
     public function delete() {

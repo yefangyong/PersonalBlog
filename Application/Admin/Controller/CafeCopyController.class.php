@@ -18,13 +18,19 @@ class CafeCopyController extends CommonController {
     //添加
     public function add() {
         if ($_POST) {
-            if(!isset($_POST['pic']) || !$_POST['pic']) {
-                return show(0,'上传图片不得为空!');
+            if(!isset($_POST['designation']) || !$_POST['designation']) {
+                return show(0,'导航名称不得为空!');
+            }
+            if(!isset($_POST['linkaddress']) || !$_POST['linkaddress']) {
+                return show(0,'连接地址不得为空!');
+            }
+            if(!isset($_POST['designation']) || !$_POST['designation']) {
+                return show(0,'导航名称不得为空!');
             }
             if($_POST['id']) {
                 return $this->save($_POST);
             }
-            $rel = D('About')->insert($_POST);
+            $rel = D('CafeCopy')->insert($_POST);
             if($rel) {
                 return show(1,'新增成功!');
             }else{

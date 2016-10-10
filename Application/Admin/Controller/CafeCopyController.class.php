@@ -24,9 +24,6 @@ class CafeCopyController extends CommonController {
             if(!isset($_POST['linkaddress']) || !$_POST['linkaddress']) {
                 return show(0,'连接地址不得为空!');
             }
-            if(!isset($_POST['designation']) || !$_POST['designation']) {
-                return show(0,'导航名称不得为空!');
-            }
             if($_POST['id']) {
                 return $this->save($_POST);
             }
@@ -44,7 +41,9 @@ class CafeCopyController extends CommonController {
 
     //更新
     public function save($data=array()) {
-      $res = D('About')->updateAboutById($data);
+        $id = $data['id'];
+        unset($data['id']);
+      $res = D('CafeCopy')->updateCafeCopyById($id,$data);
         if($res) {
             return show(1,'更新成功!');
         }else{
@@ -52,12 +51,19 @@ class CafeCopyController extends CommonController {
         }
     }
 
+    public function edit() {
+        $id = $_GET['id'];
+        $rel = M('copy')->where('id='.$id)->select();
+        $this->assign('list',$rel);
+        $this->display();
+    }
+
 
     //删除
     public function delete() {
         if(!empty($_POST)) {
             $id = $_POST['id'];
-            $delete = M('about');
+            $delete = M('copy');
             $ret = $delete->delete($id);
             if($ret) {
                 return show(1,'删除成功!');

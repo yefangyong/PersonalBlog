@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" action="<?php echo U(GROUP_NAME.'/CafeCopy/editxinxi');?>" method="post" enctype="multipart/form-data">
+                                <form class="form-horizontal form-border" id="yfycms-form" method="post" enctype="multipart/form-data">
                                 <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="form-group">
                                         <label class="col-sm-3 control-label">网站名称</label>
                                         <div class="col-sm-6">
@@ -102,7 +102,7 @@
                                         <label class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
                                             <input type="hidden" name="id" value="<?php echo ($vo["id"]); ?>">
-                                            <input type="submit" class="btn btn-primary" value="保存">
+                                            <button type="button" id="yfycms-button-submit" class="btn btn-primary" >提交</button>
                                         </div>
                                     </div><?php endforeach; endif; else: echo "" ;endif; ?>
                                 </form>
@@ -128,6 +128,10 @@
     <script src="/guest2/Public/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="/guest2/Public/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="/guest2/Public/admin/js/application.js"></script>
+    <script src="/guest2/Public/admin/js/application.js"></script>
+    <script src="/guest2/Public/dialog.js"></script>
+    <script src="/guest2/Public/admin/js/common.js"></script>
+    <script src="/guest2/Public/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="/guest2/Public/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="/guest2/Public/admin/plugins/weather/js/skycons.js"></script>
@@ -165,7 +169,14 @@
         app.weather();
         app.morrisPie();
     });
-    </script>   
+    </script>
+    <script>
+        var SCOPE={
+            'save_url':'admin.php?c=CafeCopy&a=add',
+            'jump_url':'admin.php?c=CafeCopy',
+        }
+    </script>
+
 
 </body>
 

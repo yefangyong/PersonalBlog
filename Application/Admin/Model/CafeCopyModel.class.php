@@ -28,8 +28,8 @@ class CafeCopyModel extends Model {
         return $this->_db->where('id='.$_GET['id'])->select();
     }
 
-    public function updateAboutById($data=array()) {
-        return $this->_db->where('id='.$data['id'])->save($data);
+    public function updateCafeCopyById($id,$data=array()) {
+        return $this->_db->where('id='.$id)->save($data);
     }
 
 }

@@ -109,7 +109,7 @@
                     </div>
                 </div>
                         
-                  
+
                    
                     
                 </div>
@@ -167,8 +167,8 @@
     </script>
    <script>
        var SCOPE={
-           'save_url':'admin.php?c=cafecopy&a=add',
-           'jump_url':'admin.php?c=cafecopy',
+           'save_url':'admin.php?c=CafeCopy&a=add',
+           'jump_url':'admin.php?c=CafeCopy',
        }
    </script>
 

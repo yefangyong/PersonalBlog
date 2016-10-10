@@ -13,20 +13,20 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <!-- Favicon -->
-    <link rel="shortcut icon" href="/github/guest2/Public/admin/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/guest2/Public/admin/img/favicon.ico" type="image/x-icon">
     <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="/github/guest2/Public/admin/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/guest2/Public/admin/plugins/bootstrap/css/bootstrap.min.css">
     <!-- Fonts from Font Awsome -->
-    <link rel="stylesheet" href="/github/guest2/Public/admin/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/guest2/Public/admin/css/font-awesome.min.css">
     <!-- CSS Animate -->
-    <link rel="stylesheet" href="/github/guest2/Public/admin/css/animate.css">
+    <link rel="stylesheet" href="/guest2/Public/admin/css/animate.css">
     <!-- Custom styles for this theme -->
-    <link rel="stylesheet" href="/github/guest2/Public/admin/css/main.css">
+    <link rel="stylesheet" href="/guest2/Public/admin/css/main.css">
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
     <!-- Feature detection -->
-    <script src="/github/guest2/Public/admin/js/modernizr-2.6.2.min.js"></script>
+    <script src="/guest2/Public/admin/js/modernizr-2.6.2.min.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -75,15 +75,15 @@
 
     </section>
     <!--Global JS-->
-    <script src="/github/guest2/Public/admin/js/jquery-1.10.2.min.js"></script>
-    <script src="/github/guest2/Public/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="/github/guest2/Public/admin/plugins/waypoints/waypoints.min.js"></script>
-    <script src="/github/guest2/Public/admin/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
-    <script src="/github/guest2/Public/admin/js/application.js"></script>
-    <script src="/github/guest2/Public/admin/js/login.js"></script>
-    <script src="/github/guest2/Public/jquery.js"></script>
-    <script src="/github/guest2/Public/admin/dialog/layer.js"></script>
-    <script src="/github/guest2/Public/dialog.js"></script>
+    <script src="/guest2/Public/admin/js/jquery-1.10.2.min.js"></script>
+    <script src="/guest2/Public/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/guest2/Public/admin/plugins/waypoints/waypoints.min.js"></script>
+    <script src="/guest2/Public/admin/plugins/nanoScroller/jquery.nanoscroller.min.js"></script>
+    <script src="/guest2/Public/admin/js/application.js"></script>
+    <script src="/guest2/Public/admin/js/login.js"></script>
+    <script src="/guest2/Public/jquery.js"></script>
+    <script src="/guest2/Public/admin/dialog/layer.js"></script>
+    <script src="/guest2/Public/dialog.js"></script>
 
 </body>
 

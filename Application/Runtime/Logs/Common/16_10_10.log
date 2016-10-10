@@ -34,3 +34,21 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 ERR: 无法加载模块:GROUP_NAME
 
+[ 2016-10-10T21:48:52+08:00 ] 127.0.0.1 /guest2/admin.php?m=GROUP_NAME&c=Classification&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:GROUP_NAME
+
+[ 2016-10-10T21:59:47+08:00 ] 127.0.0.1 /guest2/admin.php?m=GROUP_NAME&c=Classification&a=add
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载模块:GROUP_NAME
+
+[ 2016-10-10T22:02:47+08:00 ] 127.0.0.1 /guest2/admin.php?m=GROUP_NAME&c=Classification&a=addxinxi
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载模块:GROUP_NAME
+

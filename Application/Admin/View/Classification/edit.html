@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" action="{:U(GROUP_NAME.'/Classification/editxinxi')}" method="post" enctype="multipart/form-data">
+                                <form class="form-horizontal form-border" id="yfycms-form" method="post" enctype="multipart/form-data">
                                 <volist name="list" id="vo">
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">名称</label>
@@ -100,7 +100,7 @@
                                         <label class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
                                             <input type="hidden" name="id" value="{$vo.id}">
-                                            <input type="submit" class="btn btn-primary" value="保存">
+                                            <button type="button" id="yfycms-button-submit" class="btn btn-primary">更新</button>
                                         </div>
                                     </div>
                                 </volist>
@@ -127,6 +127,9 @@
     <script src="__PUBLIC__/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="__PUBLIC__/admin/js/application.js"></script>
+    <script src="__PUBLIC__/dialog.js"></script>
+    <script src="__PUBLIC__/admin/js/common.js"></script>
+    <script src="__PUBLIC__/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="__PUBLIC__/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="__PUBLIC__/admin/plugins/weather/js/skycons.js"></script>
@@ -164,7 +167,13 @@
         app.weather();
         app.morrisPie();
     });
-    </script>   
+    </script>
+    <script>
+        var SCOPE={
+            'save_url':'admin.php?c=classification&a=add',
+            'jump_url':'admin.php?c=classification',
+        }
+    </script>
 
 </body>
 

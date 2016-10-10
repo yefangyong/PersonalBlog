@@ -72,7 +72,7 @@
                                         <thead>
                                             <tr>
                                                 <td colspan=13>
-                                                    <a href="{:U(GROUP_NAME.'/Classification/add')}" class="btn btn-primary">添加+</a>
+                                                    <a href="javascript:void(0)" id="button-add" class="btn btn-primary">添加+</a>
                                                 </td>
                                             </tr>
                                         </thead>
@@ -93,9 +93,9 @@
                                                 <td>{$vo.sort}</td>                          
                                                 <td><if condition="$vo['power'] eq 0">开启<else />关闭</if></td>
                                                 <td>
-                                                    <a href="{:U(GROUP_NAME . '/Classification/edit',array('id'=>$vo['id']))}" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i> 
+                                                    <a href="javascript:void(0)" attr-id="{$vo.id}" id="yfycms-edit" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i>
                                                     </a>
-                                                    <a href="{:U(GROUP_NAME . '/Classification/delete',array('id'=>$vo['id']))}" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
+                                                    <a href="javascript:void(0)" attr-id="{$vo.id}" id="yfycms-delete" attr-message="删除" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                         </volist>
@@ -125,6 +125,9 @@
     <script src="__PUBLIC__/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="__PUBLIC__/admin/js/application.js"></script>
+    <script src="__PUBLIC__/dialog.js"></script>
+    <script src="__PUBLIC__/admin/js/common.js"></script>
+    <script src="__PUBLIC__/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="__PUBLIC__/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="__PUBLIC__/admin/plugins/weather/js/skycons.js"></script>
@@ -162,7 +165,15 @@
         app.weather();
         app.morrisPie();
     });
-    </script>   
+    </script>
+    <script>
+        var SCOPE={
+            'add_url':'admin.php?c=classification&a=add',
+            'set_status_url':'admin.php?c=classification&a=delete',
+            'edit_url':'admin.php?c=classification&a=edit',
+            'jump_url':'admin.php?c=classification',
+        }
+    </script>
 
 </body>
 

@@ -59,7 +59,7 @@
 
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">照片设置</h3>
+                                <h3 class="panel-title">照片列表</h3>
                                 <div class="actions pull-right">
                                     <i class="fa fa-chevron-down"></i>
                                     <i class="fa fa-times"></i>
@@ -72,7 +72,7 @@
                                         <thead>
                                             <tr>
                                                 <td colspan=16>
-                                                    <a href="{:U(GROUP_NAME.'/Photo/add')}" class="btn btn-primary">添加+</a>
+                                                    <a href="javascript:void(0)" id="button-add" class="btn btn-primary">添加+</a>
                                                 </td>
                                             </tr>
                                         </thead>
@@ -105,9 +105,9 @@
                                                                           
                                                 <td><if condition="$vo['power'] eq 0"><span style="color:green">开启</span><else /><span style="color:red">关闭</span></if></td>
                                                 <td>
-                                                    <a href="{:U(GROUP_NAME . '/Photo/edit',array('id'=>$vo['id']))}" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i> 
+                                                    <a href="javascript:void(0)" id="yfycms-edit" attr-id="{$vo.id}" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i>
                                                     </a>
-                                                    <a href="{:U(GROUP_NAME . '/Photo/delete',array('id'=>$vo['id']))}" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
+                                                    <a href="javascript:void(0)" id="yfycms-delete" attr-id="{$vo.id}" attr-message="删除" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                         </volist>
@@ -137,6 +137,9 @@
     <script src="__PUBLIC__/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="__PUBLIC__/admin/js/application.js"></script>
+    <script src="__PUBLIC__/dialog.js"></script>
+    <script src="__PUBLIC__/admin/js/common.js"></script>
+    <script src="__PUBLIC__/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="__PUBLIC__/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="__PUBLIC__/admin/plugins/weather/js/skycons.js"></script>
@@ -175,7 +178,14 @@
         app.morrisPie();
     });
     </script>   
-
+    <script>
+        var SCOPE={
+            'add_url':'admin.php?c=photo&a=add',
+            'edit_url':'admin.php?c=photo&a=edit',
+            'set_status_url':'admin.php?c=photo&a=delete',
+            'jump_url':'admin.php?c=photo'
+        }
+    </script>
 </body>
 
 </html>

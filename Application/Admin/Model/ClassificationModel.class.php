@@ -33,4 +33,8 @@ class ClassificationModel extends Model {
     public function deleteClassification($id) {
         return $this->_db->where('id='.$id)->delete();
     }
+
+    public function getPhotoClass() {
+        return $this->_db->select();
+    }
 }

@@ -72,7 +72,7 @@
                                         <thead>
                                             <tr>
                                                 <td colspan=13>
-                                                    <a href="{:U('Jaseadmin/Year/add')}" class="btn btn-primary">添加+</a>
+                                                    <a href="javascript:void(0)" id="button-add" class="btn btn-primary">添加+</a>
                                                 </td>
                                             </tr>
                                         </thead>
@@ -91,9 +91,9 @@
                                                 <td>{$vo.year}</td>                         
                                                 <td><if condition="$vo['power'] eq 0">开启<else />关闭</if></td>
                                                 <td>
-                                                    <a href="{:U('Jaseadmin/Year/edit',array('id'=>$vo['id']))}" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i> 
+                                                    <a href="javascript:void(0)" id="yfycms-edit" attr-id="{$vo.id}" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i>
                                                     </a>
-                                                    <a href="{:U('Jaseadmin/Year/delete',array('id'=>$vo['id']))}" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
+                                                    <a href="javascript:void(0)" id="yfycms-delete" attr-id="{$vo.id}" attr-message="删除" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
                                                 </td>
                                             </tr>
                                         </volist>
@@ -119,6 +119,9 @@
         <!--sidebar right start-->
         <!--sidebar right end-->
     <!--Global JS-->
+    <script src="__PUBLIC__/dialog.js"></script>
+    <script src="__PUBLIC__/admin/js/common.js"></script>
+    <script src="__PUBLIC__/admin/dialog/layer.js"></script>
     <script src="__PUBLIC__/admin/js/jquery-1.10.2.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/waypoints/waypoints.min.js"></script>
@@ -163,5 +166,13 @@
     </script>   
 
 </body>
+<script>
+    var SCOPE={
+        'add_url':'admin.php?c=year&a=add',
+        'edit_url':'admin.php?c=year&a=edit',
+        'set_status_url':'admin.php?c=year&a=delete',
+        'jump_url':'admin.php?c=year',
+    }
+</script>
 
 </html>

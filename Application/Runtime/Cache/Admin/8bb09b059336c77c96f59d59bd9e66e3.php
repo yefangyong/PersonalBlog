@@ -33,6 +33,10 @@
     <script src="/guest2/Public/admin/js/jquery-1.10.2.min.js"></script>
     <script src="/guest2/Public/admin/js/image.js"></script>
     <script src="/guest2/Public/admin/plugins/uploadify/jquery.uploadify.js"></script>
+    <script src="/guest2/Public/jquery.js"></script>
+    <script src="/guest2/Public/admin/js/jquery-1.10.2.min.js"></script>
+    <script src="/guest2/Public/admin/js/image.js"></script>
+    <script src="/guest2/Public/admin/plugins/uploadify/jquery.uploadify.js"></script>
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
@@ -55,7 +59,7 @@
                 <!--tiles start-->
                 <!--tiles end-->
                 <!--dashboard charts and map start-->
-                
+
                 <!--dashboard charts and map end-->
                 <!--ToDo start-->
               <div class="row">
@@ -70,7 +74,7 @@
                             </div>
                             <div class="panel-body">
                                 <form class="form-horizontal form-border" id="yfycms-form" method="post" enctype="multipart/form-data">
-                                
+
                                    <div class="form-group">
                                         <label class="col-sm-3 control-label">所属</label>
                                         <div class="col-sm-6">
@@ -90,8 +94,8 @@
                                         <label  class="col-sm-3 control-label">LOGO图片</label>
                                         <div class="col-sm-6">
                                             <input id="file_upload"  type="file" multiple="true" >
-                                            <img style="display: none" id="upload_org_code_img" src="<?php echo ($vov["pic"]); ?>" width="150" height="150">
-                                            <input id="file_upload_image" name="pic" type="hidden" multiple="true" value="<?php echo ($vov["pic"]); ?>">
+                                            <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
+                                            <input id="file_upload_image" name="pic" type="hidden" multiple="true" value="">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -137,7 +141,7 @@
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">详情</label>
                                         <div class="col-sm-6">
-                                            <textarea id="content" name="content"style="width:800px;height:400px;"><?php echo ($vov["content"]); ?></textarea>
+                                            <textarea id="content" name="content"style="width:700px;height:400px;"></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -154,10 +158,10 @@
                         </div>
                     </div>
                 </div>
-                        
-                  
-                   
-                    
+
+
+
+
                 </div>
                 <!--ToDo end-->
             </section>
@@ -165,7 +169,7 @@
         <!--main content end-->
         <!--sidebar right start-->
         <!--sidebar right end-->
-    <!--Global JS-->
+        <!--Global JS-->
         <script src="/guest2/Public/dialog.js"></script>
         <script src="/guest2/Public/admin/js/common.js"></script>
         <script src="/guest2/Public/admin/dialog/layer.js"></script>
@@ -239,12 +243,6 @@
                 }
             });
         </script>
-        <script>
-            var pic = '<?php echo ($vov["pic"]); ?>';
-            if(pic) {
-                $('#upload_org_code_img').show();
-            }
-        </script>
 </body>
 <script>
     var SCOPE={
@@ -254,6 +252,5 @@
         'ajax_upload_swf' : '/guest2/Public/admin/plugins/uploadify/uploadify.swf',
     }
 </script>
-</body>
 
 </html>

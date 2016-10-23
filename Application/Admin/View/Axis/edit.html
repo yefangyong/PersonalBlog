@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" action="{:U(GROUP_NAME.'/Axis/editxinxi')}" method="post" enctype="multipart/form-data">
+                                <form class="form-horizontal form-border" id="yfycms-form" enctype="multipart/form-data">
                                 
                                    <div class="form-group">
                                         <label class="col-sm-3 control-label">所属</label>
@@ -120,14 +120,14 @@
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">详情</label>
                                         <div class="col-sm-6">
-                                            <textarea id="editor_id" name="content"style="width:800px;height:400px;">{$vv.content}</textarea>
+                                            <textarea id="editor_id" name="content"style="width:600px;height:400px;">{$vv.content}</textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
                                             <input type="hidden" name="id" value="{$vv.id}">
-                                            <input type="submit" class="btn btn-primary" value="保存">
+                                            <button type="button" id="yfycms-button-submit" class="btn btn-primary" >更新</button>
                                         </div>
                                     </div>
                                 </volist>
@@ -154,6 +154,9 @@
     <script src="__PUBLIC__/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="__PUBLIC__/admin/js/application.js"></script>
+    <script src="__PUBLIC__/dialog.js"></script>
+    <script src="__PUBLIC__/admin/js/common.js"></script>
+    <script src="__PUBLIC__/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="__PUBLIC__/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="__PUBLIC__/admin/plugins/weather/js/skycons.js"></script>
@@ -183,41 +186,51 @@
     <script src="__PUBLIC__/admin/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
     <!-- ToDo List  -->
     <script src="__PUBLIC__/admin/plugins/todo/js/todos.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/kindeditor/kindeditor-min.js"></script>
-    <script charset="utf-8" src="__PUBLIC__/kindeditor/lang/zh_CN.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/kindeditor/kindeditor-all.js"></script>
+    <script  charset="utf-8" src="__PUBLIC__/kindeditor/lang/zh_CN.js"></script>
     <!--Load these page level functions-->
     <script>
-    $(document).ready(function() {
-        app.timer();
-        app.map();
-        app.weather();
-        app.morrisPie();
-    });
-    </script> 
-    <script>
-var editor; 
-        KindEditor.ready(function(K) { 
-                editor = K.create('#editor_id'); 
+        $(document).ready(function() {
+            app.timer();
+            app.map();
+            app.weather();
+            app.morrisPie();
         });
-    
-</script>   
+    </script>
+    <script>
+        // 6.2
+        KindEditor.ready(function(K) {
+            window.editor = K.create('#editor_id',{
+                //富文本编辑器上传图片的链接地址
+                uploadJson : 'admin.php?c=aboutus&a=kindupload',
+                //关键代码，表示当焦点离开后，把数据赋值给textarea
+                afterBlur : function(){this.sync();}, //
+            });
+        });
+    </script>
     <script>
         $('#color').ColorPicker({
-          color: '#0000ff',
-          onShow: function (colpkr) {
-            $(colpkr).fadeIn(500);
-            return false;
-          },
-          onHide: function (colpkr) {
-            $(colpkr).fadeOut(500);
-            return false;
-          },
-          onChange: function (hsb, hex, rgb) {
-            $('#color').css('backgroundColor', '#' + hex);
-            $("#color").val(hex);
-          }
+            color: '#0000ff',
+            onShow: function (colpkr) {
+                $(colpkr).fadeIn(500);
+                return false;
+            },
+            onHide: function (colpkr) {
+                $(colpkr).fadeOut(500);
+                return false;
+            },
+            onChange: function (hsb, hex, rgb) {
+                $('#color').css('backgroundColor', '#' + hex);
+                $("#color").val(hex);
+            }
         });
     </script>
 </body>
 
+<script>
+    var SCOPE={
+        'save_url':'admin.php?c=axis&a=add',
+        'jump_url':'admin.php?c=axis',
+    }
+</script>
 </html>

@@ -28,5 +28,17 @@ class AxisModel extends Model {
         return $this->_db->add($data);
     }
 
+    public function delete($id) {
+        return $this->_db->where('id='.$id)->delete();
+    }
+
+    public function getInfoById($id) {
+        return $this->_db->where('id='.$id)->select();
+    }
+
+    public function updateById($id,$data) {
+        return $this->_db->where('id='.$id)->svae($data);
+    }
+
 
 }

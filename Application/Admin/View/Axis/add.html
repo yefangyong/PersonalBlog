@@ -28,16 +28,12 @@
     <link rel="stylesheet" href="__PUBLIC__/admin/plugins/todo/css/todos.css">
     <!-- Morris  -->
     <link rel="stylesheet" href="__PUBLIC__/admin/plugins/morris/css/morris.css">
-    <link rel="stylesheet" href="__PUBLIC__/admin/plugins/uploadify/uploadify.css">
-    <script src="__PUBLIC__/jquery.js"></script>
-    <script src="__PUBLIC__/admin/js/jquery-1.10.2.min.js"></script>
-    <script src="__PUBLIC__/admin/js/image.js"></script>
-    <script src="__PUBLIC__/admin/plugins/uploadify/jquery.uploadify.js"></script>
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
     <!-- Feature detection -->
     <script src="__PUBLIC__/admin/js/modernizr-2.6.2.min.js"></script>
+    <script src="__PUBLIC__/admin/js/colorpicker.js"></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="assets/js/html5shiv.js"></script>
@@ -61,7 +57,7 @@
                     <div class="col-md-12">
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">相片修改</h3>
+                                <h3 class="panel-title">时间轴添加</h3>
                                 <div class="actions pull-right">
                                     <i class="fa fa-chevron-down"></i>
                                     <i class="fa fa-times"></i>
@@ -69,83 +65,55 @@
                             </div>
                             <div class="panel-body">
                                 <form class="form-horizontal form-border" id="yfycms-form" enctype="multipart/form-data">
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">相册分类</label>
+                                
+                                   <div class="form-group">
+                                        <label class="col-sm-3 control-label">所属</label>
                                         <div class="col-sm-6">
-                                            <select class="form-control input-sm" name="photo_id" id="fen">
+                                            <select class="form-control input-sm" name="year_id">
                                                 <option value="">请选择</option>
                                                 <volist name="list" id="vo">
-                                                    <option value="{$vo.id}">{$vo.designation}</option>
+                                                    <option value="{$vo.id}">{$vo.year}</option>
                                                 </volist>
                                             </select>
                                         </div>
                                     </div>
-                                    
-                                    <volist name="lists" id="lists">
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">标题</label>
                                         <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="title" value="{$lists.title}">
+                                            <input type="text" class="form-control" name="title" placeholder="标题">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="col-sm-3 control-label">开启状态</label>
+                                        <div class="col-sm-6">
+                                            <label class="radio-inline">
+                                                <input class="icheck" type="radio" name="power" value="0">开启</label>
+                                            <label class="radio-inline">
+                                                <input class="icheck" type="radio" checked="checked" name="power" value="1">关闭</label>
                                         </div>
                                     </div>
                                     <div class="form-group">
-                                        <label  class="col-sm-3 control-label">LOGO图片</label>
+                                        <label class="col-sm-3 control-label">样式</label>
                                         <div class="col-sm-6">
-                                            <input id="file_upload"  type="file" multiple="true" >
-                                            <img style="display: none" id="upload_org_code_img" src="{$lists.pic}" width="150" height="150">
-                                            <input id="file_upload_image" name="pic" type="hidden" multiple="true" value="{$lists.pic}">
+                                            <label class="radio-inline">
+                                                <input class="icheck" type="radio" name="style" value="0">样式1</label>
+                                            <label class="radio-inline">
+                                                <input class="icheck" type="radio" checked="checked" name="style" value="1">样式2</label>
                                         </div>
                                     </div>
-                                    
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">推荐</label>
-                                        <div class="col-sm-6">
-                                            <if condition="$lists['groom'] eq 1">
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" name="groom" value="0">开启</label>
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" checked="checked" name="groom" value="1">关闭</label>
-                                            <else />
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" checked="checked" name="groom" value="0">开启</label>
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" name="groom" value="1">关闭</label>
-                                            </if>
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">状态</label>
-                                        <div class="col-sm-6">
-                                            <if condition="$lists['power'] eq 1">
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" name="power" value="0">开启</label>
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" checked="checked" name="power" value="1">关闭</label>
-                                            <else />
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" checked="checked" name="power" value="0">开启</label>
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" name="power" value="1">关闭</label>
-                                            </if>
-                                        </div>
-                                    </div>
-                                    
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">详情</label>
                                         <div class="col-sm-6">
-                                            <textarea id="editor_id" name="content"style="width:800px;height:400px;">{$lists.content}</textarea>                                        </div>
+                                            <textarea id="editor_id" name="content"style="width:600px;height:400px;"></textarea>
+                                        </div>
                                     </div>
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label"></label>
                                         <div class="col-sm-6">
-                                            <input type="hidden" name='id' value="{$lists.id}">
-                                            <button type="button" id="yfycms-button-submit" class="btn btn-primary">更新</button>
-                                        </div>
+                                            <button type="button" id="yfycms-button-submit" class="btn btn-primary" >添加</button>                                        </div>
                                     </div>
-                                </volist>
+                            
                                 </form>
 
 
@@ -239,19 +207,11 @@
                 }
             });
         </script>
-        <script>
-            var pic = '{$lists.pic}';
-            if(pic) {
-                $('#upload_org_code_img').show();
-            }
-        </script>
 </body>
 <script>
     var SCOPE={
-        'save_url':'admin.php?c=photo&a=add',
-        'jump_url':'admin.php?c=photo',
-        'ajax_upload_image_url' : 'admin.php?c=photo&a=ajaxuploadimage',
-        'ajax_upload_swf' : '__PUBLIC__/admin/plugins/uploadify/uploadify.swf',
+        'save_url':'admin.php?c=axis&a=add',
+        'jump_url':'admin.php?c=axis',
     }
 </script>
 </html>

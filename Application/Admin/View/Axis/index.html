@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="__PUBLIC__/admin/plugins/todo/css/todos.css">
     <!-- Morris  -->
     <link rel="stylesheet" href="__PUBLIC__/admin/plugins/morris/css/morris.css">
+    <!--分页page-->
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css">
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
@@ -54,49 +56,63 @@
                 <!--ToDo start-->
               <div class="row">
                     <div class="col-md-12">
+
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">年份添加</h3>
+                                <h3 class="panel-title">时间轴设置</h3>
                                 <div class="actions pull-right">
                                     <i class="fa fa-chevron-down"></i>
                                     <i class="fa fa-times"></i>
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" id="yfycms-form" enctype="multipart/form-data">
-                                
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">年份</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="year" placeholder="年份">
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">开启状态</label>
-                                        <div class="col-sm-6">
-                                            <label class="radio-inline">
-                                                <input class="icheck" type="radio" name="power" value="0">开启</label>
-                                            <label class="radio-inline">
-                                                <input class="icheck" type="radio" checked="checked" name="power" value="1">关闭</label>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label"></label>
-                                        <div class="col-sm-6">
-                                            <button type="button" id="yfycms-button-submit" class="btn btn-primary">添加</button>
-                                        </div>
-                                    </div>
-                            
-                                </form>
 
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <td colspan=13>
+                                                    <a href="javascript:void(0)" id="button-add" class="btn btn-primary">添加+</a>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        <thead>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>年份</th>
+                                                <th>标题</th>
+                                                <th>发布时间</th>
+                                                <th>所属样式</th>
+                                                <th>开启</th>
+                                                <th>编辑</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <volist name="list" id="vo">
+                                            <tr>
+                                                <td>{$vo.id}</td>
+                                                <td>{$vo.year}</td>
+                                                <td>{$vo.title}</td>
+                                                <td>{$vo.time|date="Y-m-d H:i:s",###}</td>
+                                                <td><if condition="$vo['style'] eq 0">样式1<else />样式2</if></td>
+                                                <td><if condition="$vo['power'] eq 0">开启<else />关闭</if></td>
+                                                <td>
+                                                    <a href="javascript:void(0)" id="yfycms-edit" attr-id="{$vo.id}" class="btn  btn-sm btn-default tooltips" data-original-title="Print" type="button" data-toggle="tooltip" data-placement="top" title="修改"><i class="fa fa-print"></i>
+                                                    </a>
+                                                    <a href="javascript:void(0)" id="yfycms-delete" attr-message="删除" attr-id="{$vo.id}" class="btn btn-default btn-sm tooltips" data-original-title="删除" data-toggle="tooltip" data-placement="top" title="删除"><i class="fa fa-trash-o"></i></a>
+                                                </td>
+                                            </tr>
+                                        </volist>
+                                        </tbody>
+                                    </table>
+                                    <div class="pagination">{$page}</div>
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
                         
                   
                    
@@ -158,9 +174,10 @@
 </body>
 <script>
     var SCOPE={
-        'save_url':'admin.php?c=year&a=add',
-        'jump_url':'admin.php?c=year',
+        'add_url':'admin.php?c=axis&a=add',
+        'edit_url':'admin.php?c=axis&a=edit',
+        'set_status_url':'admin.php?c=axis&a=delete',
+        'jump_url':'admin.php?c=axis'
     }
 </script>
-
 </html>

@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="fa972533-1dda-4fab-a796-3626a92a8c91" name="默认的" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Controller/AxisController.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Controller/AxisController.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/Model/AxisModel.class.php" afterPath="$PROJECT_DIR$/Application/Admin/Model/AxisModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Axis/add.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Axis/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application/Admin/View/Axis/edit.html" afterPath="$PROJECT_DIR$/Application/Admin/View/Axis/edit.html" />
     </list>
     <ignored path="guest2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,8 +38,8 @@
       <file leaf-file-name="AxisController.class.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/AxisController.class.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.842105">
-              <caret line="65" column="36" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="36" />
+            <state vertical-scroll-proportion="-6.5526314">
+              <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
               <folding>
                 <element signature="e#6#94#0#PHP" expanded="true" />
                 <element signature="e#123#144#0#PHP" expanded="true" />
@@ -511,7 +508,13 @@
       <option name="project" value="LOCAL" />
       <updated>1477191087931</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="guest2">
+      <created>1477204155583</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1477204155583</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -939,8 +942,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Application/Admin/Controller/AxisController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.842105">
-          <caret line="65" column="36" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="36" />
+        <state vertical-scroll-proportion="-6.5526314">
+          <caret line="62" column="27" selection-start-line="62" selection-start-column="27" selection-end-line="62" selection-end-column="27" />
           <folding>
             <element signature="e#6#94#0#PHP" expanded="true" />
             <element signature="e#123#144#0#PHP" expanded="true" />

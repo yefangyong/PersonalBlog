@@ -37,7 +37,7 @@ class AxisModel extends Model {
     }
 
     public function updateById($id,$data) {
-        return $this->_db->where('id='.$id)->svae($data);
+        return $this->_db->where('id='.$id)->save($data);
     }
 
 

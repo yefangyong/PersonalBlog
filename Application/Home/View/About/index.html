@@ -1,0 +1,52 @@
+<include file="Public/news_header" />
+  <article>
+    <h3 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="">About Us</a></h3>
+    <div class="about">
+      {$abouts[0]['content']}
+    </div>
+  </article>
+  <aside>
+    <div class="avatar">
+      <a href="javascript:;" style="background: url('__ROOT__/Uploads/about/{$about[0]['pic']}') no-repeat scroll 0 0 / 160px 160px rgba(0, 0, 0, 0);">
+        <span>{$about[0]['names']}</span>
+      </a>
+    </div>
+    <div class="topspaceinfo">
+      <h1>{$about[0]['depict']}</h1>
+      <p>{$about[0]['ydepict']}</p>
+    </div>
+    <div class="about_c">
+      <p>网名：{$about[0]['names']}</p>
+      <p>职业：{$about[0]['occupation']} </p>
+      <p>籍贯：{$about[0]['place']}</p>
+      <p>电话：{$about[0]['tel']}</p>
+      <p>邮箱：{$about[0]['email']}</p>
+      <p><a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&amp;email=cQYGBl9JQ0RGQEdISEQxAABfEh4c" ><img src="http://rescdn.qqmail.com/zh_CN/htmledition/images/function/qm_open/ico_mailme_22.png" alt="{$web[0]['webname']} - {$Powered}"></a></p>
+      <!-- <p>  -->
+        <!--以下是QQ邮件列表订阅嵌入代码-->
+        <!-- <a target="_blank" href="http://list.qq.com/cgi-bin/qf_invite?id=65fb9b3618916f162973471ebc5b97ff786efae0ec9a863e"><img border="0" alt="填写您的邮件地址，订阅我们的精彩内容：" src="http://rescdn.list.qq.com/zh_CN/htmledition/images/qunfa/manage/picMode_light_m.png" /></a> </p> -->
+    </div>
+  </aside>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>
+</body>
+<script>
+ $(function(){
+      $('.jase').mouseenter(function(){
+        $('.logo').css({"background":"url('__PUBLIC__/home/images/home.png') no-repeat scroll center center #000"});
+      })
+      $('.jase').mouseleave(function(){
+        var pic = $(this).attr('s');
+        $('.logo').css({"background":"url('__ROOT__/Uploads/logo/"+pic+"') no-repeat scroll center center #000"});
+
+      })
+  })
+  $(document).ready(function(){  
+    $(document).bind("contextmenu",function(e){   
+          return false;   
+    });
+});
+</script>
+</html>

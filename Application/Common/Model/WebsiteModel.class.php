@@ -1,34 +1,31 @@
 <?php
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 use Think\Page;
 
-class CafeCopyModel extends Model {
+class WebsiteModel extends Model {
     private $_db='';
 
     public function __construct(){
-        $this->_db = M('copy');
+        $this->_db = M('website');
     }
 
     public function data() {
         return $this->_db->count();
     }
 
-    public function getCafeCopytList() {
+    public function getList() {
         $Page = new Page();
         $ret = $this->_db->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();
         return $ret;
     }
 
-    public function insert($data) {
-        return $this->_db->add($data);
+    public function getWebsiteInfo() {
+        $ret = $this->_db->where(array('id'=>$_GET['id']))->select();
+        return $ret;
     }
 
-    public function getAboutListById() {
-        return $this->_db->where('id='.$_GET['id'])->select();
-    }
-
-    public function updateCafeCopyById($id,$data=array()) {
+    public function updataByWebsiteId($id,$data) {
         return $this->_db->where('id='.$id)->save($data);
     }
 

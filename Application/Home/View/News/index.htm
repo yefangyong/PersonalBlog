@@ -1,0 +1,92 @@
+<include file="Public:news_header" />
+<link rel="stylesheet" href="__PUBLIC__/kindeditor/plugins/code/prettify.css">
+
+  <article>
+    <h2 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$list[0]['cat_id']))}">{$list[0]['fenl']}</a>><a href="">{$list[0]['title']}</a></h2>
+    <div class="index_about">
+      <h2 class="c_titile">{$list[0]['title']}</h2>
+      <p class="box_c"><span class="d_time">发布时间：{$list[0]['time']|date="Y-m-d",###}</span><span>编辑：{$list[0]['zuozhe']}</span><span>浏览（{$list[0]['browse']}）</span></p>
+      <ul class="infos" style="width: 700px;word-break: break-word;">
+        {$list[0]['content']}
+      </ul>
+      <div class="keybq">
+        <p><span>关键字词</span>：{$list[0]['keyword']}</p>
+      </div>
+      <div class="nextinfo">
+        <p>上一篇：<a <if condition="$prev[0]['id'] eq ''">href=""<else /> href="{:U(GROUP_NAME.'/News/index',array('id'=>$prev[0]['id']))}"</if>><if condition="$prev[0]['title'] eq ''">没有了<else />{$prev[0]['title']}</if></a></p>
+        <p>下一篇：<a <if condition="$next[0]['id'] eq ''">href=""<else /> href="{:U(GROUP_NAME.'/News/index',array('id'=>$next[0]['id']))}"</if>><if condition="$next[0]['title'] eq ''">没有了<else />{$next[0]['title']}</if></a></p>
+      </div>
+      <div class="otherlink">
+        <h2>相关文章</h2>
+        <ul>
+          <volist name="interfix" id="interfix">
+          <li><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$interfix['id']))}" title="{$interfix.title}">{$interfix.title}</a></li>
+          </volist>
+        </ul>
+      </div>
+    </div>
+  </article>
+  <aside>
+    <div class="rnav">
+      <volist name="fenlie" id="fenlie" key="j">
+      <li class="{$fenlie.yanse}"><a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$fenlie['id']))}">{$fenlie.designation}</a></li>
+      </volist>
+
+    </div>
+    <div class="ph_news">
+      <h2>
+        <p>点击排行</p>
+      </h2>
+      <ul class="ph_n">
+        <volist name="Clicks" id="Clicks" key="l">
+        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
+        </volist>
+        
+      </ul>
+      <h2>
+        <p>推荐文章</p>
+      </h2>
+      <ul>
+        <volist name="groom" id="groom">
+        <li><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
+        </volist>
+      </ul>
+      
+      
+    </div>
+    <div class="copyright">
+      <ul>
+        <p> {$web[0]['copyright']}</p>
+        <p>{$web[0]['number']}</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script src="__PUBLIC__/kindeditor/plugins/code/prettify.js"></script>
+
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>
+</body>
+<script>
+  prettyPrint();
+</script>
+<script>
+  $(function(){
+      $('.jase').mouseenter(function(){
+        $('.logo').css({"background":"url('__PUBLIC__/home/images/home.png') no-repeat scroll center center #000"});
+      })
+      $('.jase').mouseleave(function(){
+        var pic = $(this).attr('s');
+        $('.logo').css({"background":"url('__ROOT__/Uploads/logo/"+pic+"') no-repeat scroll center center #000"});
+
+      })
+  })
+  $(document).ready(function(){  
+    $(document).bind("contextmenu",function(e){   
+          return false;   
+    });
+});
+</script>
+</html>

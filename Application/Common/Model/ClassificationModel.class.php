@@ -1,5 +1,5 @@
 <?php
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 class ClassificationModel extends Model {
     private $_db = '';

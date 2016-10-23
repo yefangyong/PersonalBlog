@@ -5,7 +5,7 @@
  * Date: 2016/10/23
  * Time: 10:06
  */
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 use Think\Page;
 

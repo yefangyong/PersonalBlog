@@ -1,0 +1,82 @@
+<include file="Public:news_header" />
+<style>
+  a{color:#769B09;}
+</style>
+  <article>
+    <h2 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="">Album</a></h2>
+    <div class="template">
+      <volist name="list" id="jase">
+      <h3>
+        <p><span>{$jase.designation}</span></p>
+        <a href="{:U(GROUP_NAME.'/Photo/more',array('id'=>$jase['id']))}" class="more">更多>></a> </h3>
+      <ul>
+        <volist name="jase.son" id="jaseson">
+        <li><a href="{:U(GROUP_NAME.'/Photo/details',array('id'=>$jaseson['id']))}"  target="_blank"><img src="__ROOT__/Uploads/Photo/{$jaseson.pic}"></a><span>{$jaseson.title}</span></li>
+        </volist>
+      </ul>
+      </volist>
+      
+      
+    </div>
+    <!-- 分页 -->
+    <div style="width:100%;height:40px;float:left">
+      <div class="pagination" style="margin-top:-10px">{$page}</div>
+    </div>
+  </article>
+  <aside>
+    <div class="rnav">
+      <volist name="fenlie" id="fenlie" key="j">
+      <li class="{$fenlie.yanse}"><a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$fenlie['id']))}">{$fenlie.designation}</a></li>
+      </volist>
+    </div>
+    <div class="ph_news">
+      <h2>
+        <p>点击排行</p>
+      </h2>
+      <ul class="ph_n">
+        <volist name="Clicks" id="Clicks" key="l">
+        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
+        </volist>
+      </ul>
+      <h2>
+        <p>推荐文章</p>
+      </h2>
+      <ul>
+        <volist name="groom" id="groom">
+        <li><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
+        </volist>
+      </ul>
+      
+      
+    </div>
+    <div class="copyright">
+      <ul>
+        <p>{$web[0]['copyright']}</a></p>
+        <p>{$web[0]['number']}</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>
+</body>
+<script>
+  $(function(){
+      $('.jase').mouseenter(function(){
+        $('.logo').css({"background":"url('__PUBLIC__/home/images/home.png') no-repeat scroll center center #000"});
+      })
+      $('.jase').mouseleave(function(){
+        var pic = $(this).attr('s');
+        $('.logo').css({"background":"url('__ROOT__/Uploads/logo/"+pic+"') no-repeat scroll center center #000"});
+
+      })
+  })
+  $(document).ready(function(){  
+    $(document).bind("contextmenu",function(e){   
+          return false;   
+    });
+});
+</script>
+</html>

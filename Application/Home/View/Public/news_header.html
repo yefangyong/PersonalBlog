@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="{$list[0]['keyword']}" />
+<meta name="description" content="{$list[0]['description']}" />
+<meta name="baidu-site-verification" content="8RGa3lawHP" />
+<link rel="shortcut icon" type="image/ico" href="__PUBLIC__/home/images/favicon.ico">
+<title>{$web[0]['webname']} - {$Powered}</title>
+<link href="__PUBLIC__/home/css/base.css" rel="stylesheet">
+<link href="__PUBLIC__/home/css/about.css" rel="stylesheet">
+<link href="__PUBLIC__/home/css/style.css" rel="stylesheet">
+<link href="__PUBLIC__/home/css/media.css" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/page.css">
+<link rel="stylesheet" href="__PUBLIC__/ueditor/third-party/SyntaxHighlighter/shCoreDefault.css">
+<script src="__PUBLIC__/ueditor/third-party/SyntaxHighlighter/shCore.js"></script>
+<script>
+  SyntaxHighlighter.all();
+</script>
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="ibody">
+  <header>
+    <h1>{$web[0]['webname']}</h1>
+    <h2>{$web[0]['depict']}</h2>
+    <div class="logo" style="background: url('__ROOT__/Uploads/logo/{$logo[0]['pic']}') no-repeat scroll center center #000;">
+      <a href="{$web[0]['website']}" s="{$logo[0]['pic']}" class="jase"></a>
+    </div>
+    <nav id="topnav">
+      <volist name="nav" id="nav">
+        <a href="{$nav.linkaddress}">{$nav.designation}</a>
+      </volist>
+    </nav>
+  </header>

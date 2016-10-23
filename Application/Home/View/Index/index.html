@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="{$webkey[0]['word']}" />
+<meta name="description" content="{$webkey[0]['description']}" />
+<meta name="baidu-site-verification" content="8RGa3lawHP" />
+<link rel="shortcut icon" type="image/ico" href="__PUBLIC__/home/images/favicon.ico">
+<title>{$web[0]['webname']}</title>
+<link href="__PUBLIC__/home/css/base.css" rel="stylesheet">
+<link href="__PUBLIC__/home/css/index.css" rel="stylesheet">
+<link href="__PUBLIC__/home/css/media.css" rel="stylesheet">
+<link rel="stylesheet" href="__PUBLIC__/admin/css/page.css">
+<script src="__PUBLIC__/home/js/modernizr-custom-v2.7.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/home/js/jquery-finger-v0.1.0.min.js" type="text/javascript"></script>
+<!--Include flickerplate-->
+<link href="__PUBLIC__/home/css/flickerplate.css"  type="text/css" rel="stylesheet">
+
+<style>
+  a{color:#769B09;}
+</style>
+
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<!--[if lt IE 9]>
+<script src="js/modernizr.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="ibody">
+  <header>
+    <h1>{$web[0]['webname']}</h1>
+    <h2>{$web[0]['depict']}</h2>
+    <div class="logo" style="background: url('__ROOT__/Uploads/logo/{$logo[0]['pic']}') no-repeat scroll center center #000;position: absolute;z-index: 100;">
+      <a href="{$web[0]['website']}" s="{$logo[0]['pic']}" class="jase"></a>
+    </div>
+    <nav id="topnav">
+      <volist name="nav" id="nav">
+      <a href="{$nav.linkaddress}">{$nav.designation}</a>
+      </volist>
+    </nav>
+  </header>
+  <article>
+    <div class="flicker-example" data-block-text="true">
+  <ul>
+    <volist name="solid" id="solid">
+    <li data-background="__ROOT__/Uploads/solid/{$solid.pic}">
+      <div class="flick-title">{$solid.title}</div>
+      <div class="flick-sub-text">{$solid.character}</div>
+    </li>
+    </volist>
+  </ul>
+</div>
+    <div class="bloglist">
+      <h2>
+        <p><span>推荐</span>文章</p>
+      </h2>
+      <volist name="essay" id="essay">
+      <div class="blogs">
+        <h3><a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}">{$essay.title}</a></h3>
+        <figure><img src="__ROOT__/Uploads/essay/{$essay.pic}" ></figure>
+        <ul>
+          <p>{$essay.content|substr=0,100}</p>
+          <a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+        </ul>
+        <p class="autor"><span>作者：{$essay.zuozhe}</span><span>分类：【<a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$essay['cat_id']))}">{$essay.fenl}</a>】</span><span>浏览（<a href="javascript:;">{$essay.browse}</a>）</span></p>
+        <div class="dateview">{$essay.time|date="Y-m-d",###}</div>
+      </div>
+      </volist>
+      
+      <div class="pagination">{$page}</div>
+      
+    </div>
+  </article>
+  <aside>
+    <div class="avatar">
+      <a href="{$web[0]['website']}/index.php/About" style="background: url('__ROOT__/Uploads/about/{$about[0]['pic']}') no-repeat scroll 0 0 / 160px 160px rgba(0, 0, 0, 0);">
+        <span>{$about[0]['names']}</span>
+      </a>
+    </div>
+    <div class="topspaceinfo">
+      <h1>{$about[0]['depict']}</h1>
+      <p>{$about[0]['ydepict']}</p>
+    </div>
+    <div class="about_c">
+      <p>网名：{$about[0]['names']}</p>
+      <p>职业：{$about[0]['occupation']} </p>
+      <p>籍贯：{$about[0]['place']}</p>
+      <p>电话：{$about[0]['tel']}</p>
+      <p>邮箱：{$about[0]['email']}</p>
+    </div>
+    <div class="bdsharebuttonbox"><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_more" data-cmd="more"></a></div>
+    <div class="tj_news">
+      <h2>
+        <p class="tj_t1">最新文章</p>
+      </h2>
+      <ul>
+        <volist name="newessay" id="newessay">
+        <li><a href="{:U(Home.'/News/index',array('id'=>$newessay['id']))}">{$newessay.title}</a></li>
+        </volist>
+      </ul>
+      <h2>
+        <p class="tj_t2">推荐文章</p>
+      </h2>
+      <ul>
+        <volist name="groom" id="groom">
+        <li><a href="{:U(Home.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
+        </volist>
+      </ul>
+
+    </div>
+    <div class="links">
+      <h2>
+        <p>友情链接</p>
+      </h2>
+      <ul>
+        <volist name="copy" id="copy">
+        <li><a href="{$copy.linkaddress}">{$copy.designation}</a></li>
+      </volist>
+      </ul>
+    </div>
+    <div class="copyright">
+      <ul>
+        <p>{$web[0]['copyright']}</p>
+        <p>{$web[0]['number']}</p>
+        </p>
+      </ul>
+    </div>
+  </aside>
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script src="__PUBLIC__/home/js/flickerplate.min.js" type="text/javascript"></script>
+<script>
+  $(document).ready(function(){
+    $('.flicker-example').flicker();
+  });
+</script>
+  <div class="clear"></div>
+  <!-- 清除浮动 --> 
+</div>
+</body>
+<script>
+  $(function(){
+      $('.jase').mouseenter(function(){
+        $('.logo').css({"background":"url('__PUBLIC__/home/images/home.png') no-repeat scroll center center #000"});
+      })
+      $('.jase').mouseleave(function(){
+        var pic = $(this).attr('s');
+        $('.logo').css({"background":"url('__ROOT__/Uploads/logo/"+pic+"') no-repeat scroll center center #000"});
+
+      })
+  })
+
+$(document).ready(function(){  
+    $(document).bind("contextmenu",function(e){   
+          return false;   
+    });
+});
+
+
+</script>
+
+</html>

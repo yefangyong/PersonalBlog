@@ -1,43 +1,35 @@
 <?php
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 use Think\Page;
 
-class SlideModel extends Model {
+class AboutModel extends Model {
     private $_db='';
 
     public function __construct(){
-        $this->_db = M('solid');
+        $this->_db = M('about');
     }
 
     public function data() {
         return $this->_db->count();
     }
 
-    public function getSlideList() {
+    public function getAboutList() {
         $Page = new Page();
         $ret = $this->_db->order('id')->limit($Page->firstRow.','.$Page->listRows)->select();
         return $ret;
     }
 
-    public function addSlideInfo($data) {
+    public function insert($data) {
         return $this->_db->add($data);
     }
 
-
-    public function getSlideListById() {
+    public function getAboutListById() {
         return $this->_db->where('id='.$_GET['id'])->select();
     }
 
-    public function updateSlide($id,$data) {
-        return $this->_db->where('id='.$id)->save($data);
-    }
-
-    public function deleteSlide($id) {
-        return $this->_db->where('id='.$id)->delete();
-    }
-
-    public function updateNavById($data=array()) {
+    public function updateAboutById($data=array()) {
         return $this->_db->where('id='.$data['id'])->save($data);
     }
+
 }

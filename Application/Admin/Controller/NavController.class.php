@@ -44,8 +44,11 @@ class NavController extends CommonController {
     }
 
     //更新
-    public function save($data=array()) {
-      $res = D('Nav')->updateNavById($data);
+    public function save($data) {
+        $id = $_POST['id'];
+        unset($_POST['id']);
+        $data=$_POST;
+      $res = D('Nav')->updateNavById($id,$data);
         if($res) {
             return show(1,'更新成功!');
         }else{

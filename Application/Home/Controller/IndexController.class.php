@@ -1,8 +1,34 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class IndexController extends Controller {
-    public function index(){
-        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+use Think\Page;
+class IndexController extends CommonController{
+    public function  __construct(){
+        parent::__construct();
+        parent::common();
+    }
+
+    public function index() {
+        $website = M('essay');
+        $count = $website->where(array('power'=>0,'groom'=>0))->count();
+        $Page = new Page($count,10);
+        $show = $Page->show();
+        $list = $website->where(array('power'=>0,'groom'=>0))->order('time desc')->limit($Page->firstRow.','.$Page->listRows)->select();
+        foreach ($list as $key => $val) {
+            $list[$key]['zuozhe'] = M('admin')->where(array('id'=>$val['author']))->getField('username');
+            $list[$key]['fenl'] = M('categories')->where(array('id'=>$val['cat_id']))->getField('designation');
+        }
+        //推荐文章
+        $groom = M('essay')->where(array('power'=>0,'groom'=>0))->limit(0,10)->order('id')->field('id,title')->select();
+        //最新文章
+        $newessay = M('essay')->where(array('power'=>0,'groom'=>0))->limit(0,10)->order('time desc')->field('id,title')->select();
+        //幻灯片
+        $solid = M('solid')->where(array('power'=>0))->order('sort')->select();
+        $this->assign('essay',$list);
+        $this->assign('groom',$groom);
+        $this->assign('newessay',$newessay);
+        $this->assign('solid',$solid);
+        $this->assign('page',$show);
+        $this->display();
     }
 }

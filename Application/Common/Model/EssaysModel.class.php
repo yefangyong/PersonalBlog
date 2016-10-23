@@ -1,25 +1,25 @@
 <?php
-namespace Admin\Model;
+namespace Common\Model;
 use Think\Model;
 use Think\Page;
 
-class EssayModel extends Model {
+class EssaysModel extends Model {
     private $_db='';
 
     public function __construct(){
-        $this->_db = M('categories');
+        $this->_db = M('essay');
     }
 
     public function data() {
         return $this->_db->count();
     }
 
-    public function getEssayList() {
+    public function getEssaysList() {
         $res = $this->_db->select();
         return $res;
     }
 
-    public function getEssayById($id) {
+    public function getEssaysById($id) {
         $res = $this->_db->where('id='.$id)->select();
         return $res;
     }
@@ -27,11 +27,11 @@ class EssayModel extends Model {
         return $this->_db->add($data);
     }
 
-    public function updataEssayById($id,$data) {
+    public function updataEssaysById($id,$data) {
         return $this->_db->where('id='.$id)->save($data);
     }
 
-    public function dropEssayById($id) {
+    public function dropEssaysById($id) {
         return $this->_db->where('id='.$id)->delete();
     }
 

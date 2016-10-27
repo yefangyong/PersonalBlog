@@ -1,26 +1,31 @@
 <include file="Public:news_header" />
+<style>
+  a{color:#769B09;}
+</style>
   <article>
-    <h2 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="{:U(GROUP_NAME.'/Photo/more',array('id'=>$classification[0]['id']))}">{$classification[0]['designation']}</a>><a href="">{$arr[0]['title']}</a></h2>
-    <div class="index_about">
-      <h2 class="c_titile">{$arr[0]['title']}</h2>
-      <p class="box_c"><span class="d_time">发布时间：{$arr[0]['time']|date="Y-m-d",###}</span><span>编辑：{$arr[0]['zuozhe']}</span><span>浏览（{$arr[0]['browse']}）</span></p>
-      <ul class="infos">
-        {$arr[0]['content']}
+    <h2 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="">Album</a></h2>
+    <div class="template">
+      <h3>
+        <p><span>{$websites[0]['designation']}</span></p>
+        <!-- <a href="{:U(Home.'/Photo/more',array('id'=>$jase['id']))}" class="more">更多>></a> --> </h3>
+      <ul>
+        <volist name="lists" id="jaseson">
+        <li><a href="{:U(Home.'/Photo/details',array('id'=>$jaseson['id']))}"  target="_blank"><img src="__ROOT__/Uploads/Photo/{$jaseson.pic}"></a><span>{$jaseson.title}</span></li>
+        </volist>
       </ul>
       
       
-      <div class="otherlink">
-        <h2></h2>
-       
-      </div>
+    </div>
+    <!-- 分页 -->
+    <div style="width:100%;height:40px;float:left">
+      <div class="pagination" style="margin-top:-10px">{$page}</div>
     </div>
   </article>
   <aside>
     <div class="rnav">
       <volist name="fenlie" id="fenlie" key="j">
-      <li class="{$fenlie.yanse}"><a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$fenlie['id']))}">{$fenlie.designation}</a></li>
+      <li class="{$fenlie.yanse}"><a href="{:U(Home.'/Section/index',array('id'=>$fenlie['id']))}">{$fenlie.designation}</a></li>
       </volist>
-
     </div>
     <div class="ph_news">
       <h2>
@@ -28,16 +33,15 @@
       </h2>
       <ul class="ph_n">
         <volist name="Clicks" id="Clicks" key="l">
-        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
+        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(Home.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
         </volist>
-        
       </ul>
       <h2>
         <p>推荐文章</p>
       </h2>
       <ul>
         <volist name="groom" id="groom">
-        <li><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
+        <li><a href="{:U(Home.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
         </volist>
       </ul>
       
@@ -45,7 +49,7 @@
     </div>
     <div class="copyright">
       <ul>
-        <p> {$web[0]['copyright']}</p>
+        <p> {$web[0]['copyright']}</a></p>
         <p>{$web[0]['number']}</p>
         </p>
       </ul>

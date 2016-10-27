@@ -94,7 +94,7 @@
                                         <tbody>
                                             <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
                                                 <td><?php echo ($vo["id"]); ?></td>
-                                                <td><img src="/guest2/Uploads/essay/<?php echo ($vo["pic"]); ?>" style="width:100px;height:50px" alt=""></td>
+                                                <td><img src="<?php echo ($vo["pic"]); ?>" style="width:100px;height:50px" alt=""></td>
                                                 <td><?php echo ($vo["designation"]); ?></td>
                                                 <td><?php echo ($vo["title"]); ?></td>
                                                 <td><?php echo ($vo["username"]); ?></td>

@@ -8,6 +8,7 @@
 <title>{$web[0]['webname']} - {$Powered}</title>
 <link href="__PUBLIC__/home/css/base.css" rel="stylesheet">
 <link href="__PUBLIC__/home/css/style.css" rel="stylesheet">
+<link href="__PUBLIC__/home/css/index.css" rel="stylesheet">
 <link href="__PUBLIC__/home/css/media.css" rel="stylesheet">
 <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
@@ -33,25 +34,20 @@
     </nav>
   </header>
   <article>
-    <h2 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$navname[0]['id']))}">{$navname[0]['designation']}</a></h2>
+    <h2 class="about_h">您现在的位置是：<a href="{$web[0]['website']}">首页</a>><a href="{:U(Home.'/Section/index',array('id'=>$navname[0]['id']))}">{$navname[0]['designation']}</a></h2>
     <div class="bloglist">
-      <volist name="essay" id="essay">
-      <div class="newblog">
-        <ul style="width:100%">
-          <h3><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$essay['id']))}">{$essay.title}</a></h3>
-          <div class="autor"><span>作者：{$essay.zuozhe}</span><span>分类：[<a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$essay['cat_id']))}">{$essay.fenl}</a>]</span><span>浏览（<a href="javascript:;">{$essay.browse}</a>）</span></div>
-          <p>{$essay.content|msubstr=0,200}<a href="{:U(GROUP_NAME.'/News/index',array('id'=>$essay['id']))}" target="_blank" class="readmore">全文</a></p>
-        </ul>
-        <!-- <figure><img src="__ROOT__/Uploads/essay/{$essay.pic}" ></figure> -->
-        <div class="dateview">{$essay.time|date="Y-m-d",###}</div>
-      </div>
-      </volist>
-      
-      
-      
-      
-      
-      
+        <volist name="essay" id="essay">
+            <div class="blogs">
+                <h3><a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}">{$essay.title}</a></h3>
+                <figure><img src="{$essay.pic}" /></figure>
+                <ul>
+                    <p>{$essay.content|msubstr=0,100}</p>
+                    <a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+                </ul>
+                <p class="autor"><span>作者：{$essay.zuozhe}</span><span>分类：【<a href="{:U(Home.'/Section/index',array('id'=>$essay['cat_id']))}">{$essay.fenl}</a>】</span><span>浏览（<a href="javascript:;">{$essay.browse}</a>）</span></p>
+                <div class="dateview">{$essay.time|date="Y-m-d",###}</div>
+            </div>
+        </volist>
     </div>
     
       <div class="pagination">{$page}</div>
@@ -60,7 +56,7 @@
   <aside>
     <div class="rnav">
       <volist name="fenlie" id="fenlie" key="j">
-      <li class="{$fenlie.yanse}"><a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$fenlie['id']))}">{$fenlie.designation}</a></li>
+      <li class="{$fenlie.yanse}"><a href="{:U(Home.'/Section/index',array('id'=>$fenlie['id']))}">{$fenlie.designation}</a></li>
       </volist>
     </div>
     <div class="ph_news">
@@ -69,7 +65,7 @@
       </h2>
       <ul class="ph_n">
         <volist name="Clicks" id="Clicks" key="l">
-        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
+        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(Home.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
         </volist>
       </ul>
       <h2>
@@ -77,7 +73,7 @@
       </h2>
       <ul>
          <volist name="groom" id="groom">
-         <li><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
+         <li><a href="{:U(Home.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
         </volist>
       </ul>
       

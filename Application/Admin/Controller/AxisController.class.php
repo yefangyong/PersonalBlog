@@ -36,6 +36,7 @@ class AxisController extends CommonController {
             if($_POST['id']) {
                 return $this->save($_POST);
             }
+            $_POST['time']=time();
             $rel = D('Axis')->insert($_POST);
             if($rel) {
                 return show(1,'添加成功!');
@@ -61,6 +62,7 @@ class AxisController extends CommonController {
 
     public function save($data) {
         $id = $_POST['id'];
+        $_POST['time']=time();
         unset($_POST['id']);
         $data = $_POST;
         $rel = D('Axis')->updateById($id,$data);

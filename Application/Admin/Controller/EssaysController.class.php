@@ -25,6 +25,17 @@ class EssaysController extends CommonController {
         }
     }
 
+    //异步上传富文本的数据，调用tp自带的upload类
+    public function kindupload(){
+        $upload=D('UploadImage');
+        $res=$upload->upload('essay');
+        if($res === false){
+            return showkind(1,'上传失败');
+        }else{
+            return showkind(0,$res);
+        }
+    }
+
     public function add() {
         if ($_POST) {
            if(!isset($_POST['cat_id']) || !$_POST['cat_id']) {
@@ -42,6 +53,8 @@ class EssaysController extends CommonController {
             if(!$_POST['content'] || !isset($_POST['content'])) {
                 return show(0,'详情不得为空!');
             }
+            $_POST['time'] = time();
+            $_POST['author'] = 68;
             $res = D('Essays')->insert($_POST);
             if($res) {
                 return show(1,'添加成功!');
@@ -70,6 +83,8 @@ class EssaysController extends CommonController {
 
     //编辑
     public function edit() {
+        $list = D('Essay')->getEssayList();
+        $this->assign('list',$list);
         $id = $_GET['id'];
         $lists = D('Essays')->getEssaysById($id);
         $this->assign('lists',$lists);

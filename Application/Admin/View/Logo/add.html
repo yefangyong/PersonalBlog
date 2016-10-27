@@ -69,7 +69,7 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" id="yfy-form" method="post" enctype="multipart/form-data">
+                                <form class="form-horizontal form-border" id="yfycms-form" method="post" enctype="multipart/form-data">
                                 
                                    
                                     

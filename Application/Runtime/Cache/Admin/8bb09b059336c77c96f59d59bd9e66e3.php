@@ -94,8 +94,8 @@
                                         <label  class="col-sm-3 control-label">LOGO图片</label>
                                         <div class="col-sm-6">
                                             <input id="file_upload"  type="file" multiple="true" >
-                                            <img style="display: none" id="upload_org_code_img" src="" width="150" height="150">
-                                            <input id="file_upload_image" name="pic" type="hidden" multiple="true" value="">
+                                            <img style="display: none" id="upload_org_code_img" src="<?php echo ($vov["pic"]); ?>" width="150" height="150">
+                                            <input id="file_upload_image" name="pic" type="hidden" multiple="true" value="<?php echo ($vov["pic"]); ?>">
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -141,7 +141,7 @@
                                     <div class="form-group">
                                         <label class="col-sm-3 control-label">详情</label>
                                         <div class="col-sm-6">
-                                            <textarea id="content" name="content"style="width:700px;height:400px;"></textarea>
+                                            <textarea id="editor_id"name="content"style="width:800px;height:400px;"><?php echo ($vov["content"]); ?></textarea>
                                         </div>
                                     </div>
                                     <div class="form-group">
@@ -207,16 +207,8 @@
         <script src="/guest2/Public/admin/plugins/jvectormap/js/jquery-jvectormap-world-mill-en.js"></script>
         <!-- ToDo List  -->
         <script src="/guest2/Public/admin/plugins/todo/js/todos.js"></script>
-        <script>
-            window.UEDITOR_HOME_URL = "/guest2/Public/ueditor/";
-            window.onload = function () {
-                UE.getEditor('content');
-            }
-        </script>
-        <script src="/guest2/Public/ueditor/ueditor.config.js"></script>
-        <script src="/guest2/Public/ueditor/ueditor.all.min.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/guest2/Public/ueditor/lang/zh-cn/zh-cn.js"></script>
-        <script type="text/javascript" charset="utf-8" src="/guest2/Public/ueditor/lang/en/en.js"></script>
+        <script charset="utf-8" src="/guest2/Public/kindeditor/kindeditor-all.js"></script>
+        <script  charset="utf-8" src="/guest2/Public/kindeditor/lang/zh_CN.js"></script>
         <!--Load these page level functions-->
         <script>
             $(document).ready(function() {
@@ -224,6 +216,17 @@
                 app.map();
                 app.weather();
                 app.morrisPie();
+            });
+        </script>
+        <script>
+            // 6.2
+            KindEditor.ready(function(K) {
+                window.editor = K.create('#editor_id',{
+                    //富文本编辑器上传图片的链接地址
+                    uploadJson : 'admin.php?c=essays&a=kindupload',
+                    //关键代码，表示当焦点离开后，把数据赋值给textarea
+                    afterBlur : function(){this.sync();}, //
+                });
             });
         </script>
         <script>
@@ -244,6 +247,12 @@
             });
         </script>
 </body>
+<script>
+    var pic = '<?php echo ($vov["pic"]); ?>';
+    if(pic) {
+        $('#upload_org_code_img').show();
+    }
+</script>
 <script>
     var SCOPE={
         'save_url':'admin.php?c=essays&a=save',

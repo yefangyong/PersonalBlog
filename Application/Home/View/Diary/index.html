@@ -48,7 +48,7 @@
       </h2>
       <ul class="ph_n">
         <volist name="Clicks" id="Clicks" key="l">
-        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
+        <li><span <if condition="$l eq 1">class="num1"<elseif condition="$l eq 2" />class="num2"<elseif condition="$l eq 3" />class="num3"<else /></if> >{$l}</span><a href="{:U(Home.'/News/index',array('id'=>$Clicks['id']))}">{$Clicks.title}</a></li>
         </volist>
       </ul>
       <h2>
@@ -56,7 +56,7 @@
       </h2>
       <ul>
         <volist name="groom" id="groom">
-        <li><a href="{:U(GROUP_NAME.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
+        <li><a href="{:U(Home.'/News/index',array('id'=>$groom['id']))}">{$groom.title}</a></li>
         </volist>
       </ul>
       

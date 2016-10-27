@@ -30,7 +30,7 @@
   <header>
     <h1>{$web[0]['webname']}</h1>
     <h2>{$web[0]['depict']}</h2>
-    <div class="logo" style="background: url('__ROOT__/Uploads/logo/{$logo[0]['pic']}') no-repeat scroll center center #000;position: absolute;z-index: 100;">
+    <div class="logo" style="background: url('{$logo[0]['pic']}') no-repeat scroll center center #000;position: absolute;z-index: 100;">
       <a href="{$web[0]['website']}" s="{$logo[0]['pic']}" class="jase"></a>
     </div>
     <nav id="topnav">
@@ -55,20 +55,20 @@
         <p><span>推荐</span>文章</p>
       </h2>
       <volist name="essay" id="essay">
-      <div class="blogs">
-        <h3><a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}">{$essay.title}</a></h3>
-        <figure><img src="__ROOT__/Uploads/essay/{$essay.pic}" ></figure>
-        <ul>
-          <p>{$essay.content|substr=0,100}</p>
-          <a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
-        </ul>
-        <p class="autor"><span>作者：{$essay.zuozhe}</span><span>分类：【<a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$essay['cat_id']))}">{$essay.fenl}</a>】</span><span>浏览（<a href="javascript:;">{$essay.browse}</a>）</span></p>
-        <div class="dateview">{$essay.time|date="Y-m-d",###}</div>
-      </div>
+        <div class="blogs">
+          <h3><a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}">{$essay.title}</a></h3>
+          <figure><img src="{$essay.pic}" ></figure>
+          <ul>
+            <p>{$essay.content|msubstr=0,100}</p>
+            <a href="{:U(Home.'/News/index',array('id'=>$essay['id']))}" target="_blank" class="readmore">阅读全文&gt;&gt;</a>
+          </ul>
+          <p class="autor"><span>作者：{$essay.zuozhe}</span><span>分类：【<a href="{:U(GROUP_NAME.'/Section/index',array('id'=>$essay['cat_id']))}">{$essay.fenl}</a>】</span><span>浏览（<a href="javascript:;">{$essay.browse}</a>）</span></p>
+          <div class="dateview">{$essay.time|date="Y-m-d",###}</div>
+        </div>
       </volist>
-      
+
       <div class="pagination">{$page}</div>
-      
+
     </div>
   </article>
   <aside>

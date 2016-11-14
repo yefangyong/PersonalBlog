@@ -27,15 +27,11 @@ class WebsiteController extends CommonController {
       $websiteId = $_POST['id'];
         //注意id不能更新，所以要把id释放掉
         unset($_POST['id']);
-        try{
-            $id = D('Website')->updataByWebsiteId($websiteId,$_POST);
-            if($id == false) {
+            $id = D('Website')->updateByWebsiteId($websiteId,$_POST);
+            if($id===false) {
                 return show(0,'更新失败');
             }
             return show(1,'更新成功');
-        }catch (Exception $e) {
-            return show(0,$e->getMessage());
-        }
 
     }
 }

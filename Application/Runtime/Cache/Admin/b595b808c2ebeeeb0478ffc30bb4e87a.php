@@ -166,7 +166,7 @@
             <div id="leftside-navigation" class="nano">
                 <ul class="nano-content">
                     <li class="active">
-                        <a href="<?php echo U(GROUP_NAME.'/Index/index');?>"><i class="fa fa-dashboard"></i><span>后台首页</span></a>
+                        <a href="<?php echo U(Admin.'/Index/index');?>"><i class="fa fa-dashboard"></i><span>后台首页</span></a>
                     </li>
                     <li class="sub-menu">
                         <a href="javascript:void(0);"><i class="fa fa-cogs"></i><span>全局设置</span><i class="arrow fa fa-angle-right pull-right"></i></a>

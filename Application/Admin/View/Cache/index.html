@@ -28,6 +28,8 @@
     <link rel="stylesheet" href="__PUBLIC__/admin/plugins/todo/css/todos.css">
     <!-- Morris  -->
     <link rel="stylesheet" href="__PUBLIC__/admin/plugins/morris/css/morris.css">
+    <!--分页page-->
+    <link rel="stylesheet" href="__PUBLIC__/admin/css/page.css">
     <!-- Fonts -->
     <!-- <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'> -->
@@ -54,93 +56,37 @@
                 <!--ToDo start-->
               <div class="row">
                     <div class="col-md-12">
+
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">{$type}修改</h3>
+                                <h3 class="panel-title">缓存设置</h3>
                                 <div class="actions pull-right">
                                     <i class="fa fa-chevron-down"></i>
                                     <i class="fa fa-times"></i>
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" id="yfycms-form" enctype="multipart/form-data">
-                                    <volist name="list" id="vo">
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">网站域名</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="website" value="{$vo.website}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">网站名称</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="webname" value="{$vo.webname}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">名称描述</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="depict" value="{$vo.depict}">
-                                        </div>
-                                    </div>
-                                   <div class="form-group">
-                                        <label class="col-sm-3 control-label">网站版权</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="copyright" value="{$vo.copyright}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">网站备案号</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="number" value="{$vo.number}">
-                                        </div>
-                                    </div>
-                                    
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">电话</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="tel" value="{$vo.tel}">
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">邮箱</label>
-                                        <div class="col-sm-6">
-                                            <input type="text" class="form-control" name="email" value="{$vo.email}">
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label">开启状态</label>
-                                        <div class="col-sm-6">
-                                            <if condition="$vo['power'] eq 1">
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" name="power" value="0">开启</label>
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" checked="checked" name="power" value="1">关闭</label>
-                                            <else />
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" checked="checked" name="power" value="0">开启</label>
-                                                <label class="radio-inline">
-                                                    <input class="icheck" type="radio" name="power" value="1">关闭</label>
-                                            </if>
-                                        </div>
-                                    </div>
-                                    <div class="form-group">
-                                        <label class="col-sm-3 control-label"></label>
-                                        <div class="col-sm-6">
-                                            <input type="hidden" name="id" value="{$vo.id}">
-                                            <button type="button" class="btn btn-primary" id="yfycms-button-submit" >更新</button>
-                                        </div>
-                                    </div>
-                                </volist>
-                                </form>
 
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <td colspan=13>
+                                                    <a href="{:U(Admin.'/Cache/cache')}" class="btn btn-primary">全站缓存更新</a>
+                                                </td>
+                                            </tr>
+                                        </thead>
+                                        
+                                        
+                                    </table>
+                                    
+                                </div>
 
                             </div>
                         </div>
                     </div>
                 </div>
+
                         
                   
                    
@@ -157,10 +103,6 @@
     <script src="__PUBLIC__/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="__PUBLIC__/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="__PUBLIC__/admin/js/application.js"></script>
-    <script src="__PUBLIC__/jquery.js"></script>
-    <script src="__PUBLIC__/dialog.js"></script>
-    <script src="__PUBLIC__/admin/js/common.js"></script>
-    <script src="__PUBLIC__/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="__PUBLIC__/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="__PUBLIC__/admin/plugins/weather/js/skycons.js"></script>
@@ -199,12 +141,7 @@
         app.morrisPie();
     });
     </script>   
-<script>
-    var SCOPE = {
-        'jump_url':'admin.php?c=website&a=index',
-        'save_url':'admin.php?c=website&a=save',
-    }
-</script>
+
 </body>
 
 </html>

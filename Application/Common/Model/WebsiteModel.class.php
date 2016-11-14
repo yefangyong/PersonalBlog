@@ -25,7 +25,7 @@ class WebsiteModel extends Model {
         return $ret;
     }
 
-    public function updataByWebsiteId($id,$data) {
+    public function updateByWebsiteId($id,$data) {
         return $this->_db->where('id='.$id)->save($data);
     }
 

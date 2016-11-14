@@ -63,7 +63,7 @@
                                 </div>
                             </div>
                             <div class="panel-body">
-                                <form class="form-horizontal form-border" id="yfy-form" method="post">
+                                <form class="form-horizontal form-border" id="yfycms-form" enctype="multipart/form-data">
                                     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><div class="form-group">
                                         <label class="col-sm-3 control-label">网站域名</label>
                                         <div class="col-sm-6">
@@ -149,14 +149,14 @@
         <!--sidebar right start-->
         <!--sidebar right end-->
     <!--Global JS-->
-        <script src="/guest2/Public/jquery.js"></script>
-        <script src="/guest2/Public/dialog.js"></script>
-        <script src="/guest2/Public/admin/js/common.js"></script>
-        <script src="/guest2/Public/admin/dialog/layer.js"></script>
     <script src="/guest2/Public/admin/js/jquery-1.10.2.min.js"></script>
     <script src="/guest2/Public/admin/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="/guest2/Public/admin/plugins/waypoints/waypoints.min.js"></script>
     <script src="/guest2/Public/admin/js/application.js"></script>
+    <script src="/guest2/Public/jquery.js"></script>
+    <script src="/guest2/Public/dialog.js"></script>
+    <script src="/guest2/Public/admin/js/common.js"></script>
+    <script src="/guest2/Public/admin/dialog/layer.js"></script>
     <!--Page Level JS-->
     <script src="/guest2/Public/admin/plugins/countTo/jquery.countTo.js"></script>
     <script src="/guest2/Public/admin/plugins/weather/js/skycons.js"></script>

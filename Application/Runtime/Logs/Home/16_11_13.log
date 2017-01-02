@@ -1,0 +1,576 @@
+[ 2016-11-13T23:41:25+08:00 ] 127.0.0.1 /guest2/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0320s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0200s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_essay` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_admin` [ RunTime:0.0270s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_categories` [ RunTime:0.0270s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY id LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_solid` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `weibo_solid` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.120006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.120006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.022001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.023002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-11-13T23:41:47+08:00 ] 127.0.0.1 /guest2/Home/Share
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 无法加载控制器:Share
+
+[ 2016-11-13T23:41:53+08:00 ] 127.0.0.1 /guest2/Home/Diary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_essay` [ RunTime:0.0070s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `browse` >= 10 ORDER BY browse desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY id LIMIT 0,15   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_year` [ RunTime:0.1060s ]
+SQL: SELECT * FROM `weibo_year` WHERE `power` = 0 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_year` WHERE `power` = 0 ORDER BY id desc  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_axis` [ RunTime:0.0330s ]
+SQL: SELECT * FROM `weibo_axis` WHERE `year_id` = 7 ORDER BY time desc  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `weibo_axis` WHERE `year_id` = 6 ORDER BY time desc  [ RunTime:0.0020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 5 行.
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 6 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 9 行.
+NOTIC: [2] date() expects parameter 2 to be long, string given E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 52 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\7ef929994341686afe8d7d13be45e9b6.php 第 85 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T23:42:07+08:00 ] 127.0.0.1 /guest2/Home/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 5 行.
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 6 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 9 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T23:42:15+08:00 ] 127.0.0.1 /guest2/Home/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 5 行.
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 6 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 9 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-13T23:42:18+08:00 ] 127.0.0.1 /guest2/Home/Index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_essay` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_admin` [ RunTime:0.0080s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_categories` [ RunTime:0.0060s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 16 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 13 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 15 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY id LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_solid` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_solid` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 58 行.
+NOTIC: [8] Use of undefined constant GROUP_NAME - assumed 'GROUP_NAME' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 60 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 91 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T23:42:19+08:00 ] 127.0.0.1 /guest2/Home/About
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0000s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 5 行.
+NOTIC: [8] Undefined variable: list E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 6 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 9 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3b9bb8f59aaa4d1691c827dd64ddfa9b.php 第 59 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T23:42:21+08:00 ] 127.0.0.1 /guest2/Home/Photo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_classification` [ RunTime:0.0370s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_classification` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `weibo_classification` ORDER BY sort LIMIT 0,4   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_photo` [ RunTime:0.0230s ]
+SQL: SELECT * FROM `weibo_photo` WHERE `power` = 0 AND `groom` = 0 AND `photo_id` = 20 LIMIT 0,12   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `weibo_photo` WHERE `power` = 0 AND `groom` = 0 AND `photo_id` = 21 LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_photo` WHERE `power` = 0 AND `groom` = 0 AND `photo_id` = 22 LIMIT 0,12   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_essay` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY id LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `browse` >= 10 ORDER BY browse desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_categories` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_categories` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: keyword E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 5 行.
+NOTIC: [8] Undefined index: description E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 6 行.
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 9 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 45 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 45 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 45 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 47 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 59 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 59 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 59 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 59 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 66 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 66 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 66 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\558a3efeccaa3bb0fbbca1a94fd73cdc.php 第 72 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005001s ]
+
+[ 2016-11-13T23:42:36+08:00 ] 127.0.0.1 /guest2/index.php?m=Home&c=Section&a=index&id=14
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_categories` [ RunTime:0.0080s ]
+SQL: SELECT `id`,`designation` FROM `weibo_categories` WHERE `id` = 14  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_essay` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_essay` WHERE `power` = 0 AND `cat_id` = 14 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `weibo_essay` WHERE `power` = 0 AND `cat_id` = 14 ORDER BY time desc LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_admin` [ RunTime:0.0070s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `browse` >= 10 ORDER BY browse desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY id LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `weibo_categories` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 8 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 35 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 38 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 42 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 44 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 54 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 61 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 61 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 61 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\9eac4652c34134f74422436a57800f9e.php 第 67 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-13T23:42:39+08:00 ] 127.0.0.1 /guest2/index.php?m=Home&c=News&a=index&id=37
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_website` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_website` WHERE `power` = 0 ORDER BY id LIMIT 0,1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_copy` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_copy` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_about` LIMIT 0,1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `weibo_nav` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `weibo_logo` WHERE `power` = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_essay` [ RunTime:0.0070s ]
+SQL: UPDATE `weibo_essay` SET `browse`=browse+1 WHERE `id` = 37 [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_essay` WHERE `id` = 37  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `weibo_admin` [ RunTime:0.0070s ]
+SQL: SELECT `username` FROM `weibo_admin` WHERE `id` = 68 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `weibo_categories` [ RunTime:0.0060s ]
+SQL: SELECT `designation` FROM `weibo_categories` WHERE `id` = 14 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `cat_id` = 14 LIMIT 0,10   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `power` = 0 AND `groom` = 0 ORDER BY id LIMIT 0,15   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `browse` >= 10 ORDER BY browse desc LIMIT 0,15   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `weibo_categories` WHERE `power` = 0 ORDER BY sort  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `id` = 36  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`title` FROM `weibo_essay` WHERE `id` = 38  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: Powered E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 9 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 40 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 51 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 52 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 57 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 64 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 64 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 64 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 64 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 72 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+NOTIC: [8] Use of undefined constant Home - assumed 'Home' E:\WWW\guest2\Application\Runtime\Cache\Home\3e24b471de08a8366f7660bb176a5e74.php 第 79 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.074004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+

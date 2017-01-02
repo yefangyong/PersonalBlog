@@ -1,0 +1,299 @@
+[ 2016-11-22T19:40:40+08:00 ] 127.0.0.1 /guest2/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T19:40:41+08:00 ] 127.0.0.1 /guest2/admin.php?&c=login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: web E:\WWW\guest2\Application\Runtime\Cache\Admin\32ec6c906c117a7c2bf504769276d87a.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T19:40:49+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `weibo_admin` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `weibo_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-11-22T19:40:56+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `weibo_admin` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `weibo_admin` WHERE ( username="admin" ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-11-22T19:40:57+08:00 ] 127.0.0.1 /guest2/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: web E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 13 行.
+NOTIC: [8] Undefined variable: web E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 50 行.
+NOTIC: [8] Undefined variable: usrname E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 144 行.
+NOTIC: [8] Use of undefined constant Admin - assumed 'Admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 169 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 175 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 177 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 179 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 181 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 183 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 185 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 187 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 194 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 196 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 204 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 216 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 218 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 225 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 227 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 236 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 238 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\b595b808c2ebeeeb0478ffc30bb4e87a.php 第 312 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.153008s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.153008s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-22T19:40:57+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Index&a=main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] fopen(E:\WWW\guest2\ThinkPHP\Library\Org\Net/UTFWry.dat) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory E:\WWW\guest2\ThinkPHP\Library\Org\Net\IpLocation.class.php 第 54 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: user E:\WWW\guest2\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 54 行.
+NOTIC: [8] Undefined variable: mshop E:\WWW\guest2\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 64 行.
+NOTIC: [8] Undefined variable: pcshop E:\WWW\guest2\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 74 行.
+NOTIC: [8] Undefined variable: convert E:\WWW\guest2\Application\Runtime\Cache\Admin\b0f0b709690a72033d17719e8059053c.php 第 84 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T19:41:05+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Nav&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\NavModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\NavModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_nav` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_nav` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Page::__construct(), called in E:\WWW\guest2\Application\Common\Model\NavModel.class.php on line 18 and defined E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+NOTIC: [8] Undefined variable: totalRows E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 45 行.
+SQL: SELECT * FROM `weibo_nav` ORDER BY id LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: type E:\WWW\guest2\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 62 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 97 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 97 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 97 行.
+NOTIC: [8] Use of undefined constant admin - assumed 'admin' E:\WWW\guest2\Application\Runtime\Cache\Admin\c4e487e7ef540c8b27ad1e8c9be3ab57.php 第 97 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-22T19:41:06+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Logo&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Model\LogoModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\LogoModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_logo` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_logo` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Page::__construct(), called in E:\WWW\guest2\Application\Common\Model\LogoModel.class.php on line 18 and defined E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+NOTIC: [8] Undefined variable: totalRows E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 45 行.
+SQL: SELECT * FROM `weibo_logo` ORDER BY id LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T19:41:08+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Aboutus&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\AboutModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\AboutModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_about` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Page::__construct(), called in E:\WWW\guest2\Application\Common\Model\AboutModel.class.php on line 18 and defined E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+NOTIC: [8] Undefined variable: totalRows E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 45 行.
+SQL: SELECT * FROM `weibo_about` ORDER BY id LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009000s ]
+
+[ 2016-11-22T19:41:14+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Aboutus&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2048] Declaration of Common\Model\AboutModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\AboutModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_about` LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [2] Missing argument 1 for Think\Page::__construct(), called in E:\WWW\guest2\Application\Common\Model\AboutModel.class.php on line 18 and defined E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+NOTIC: [8] Undefined variable: totalRows E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 45 行.
+SQL: SELECT * FROM `weibo_about` ORDER BY id LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T19:41:18+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Slide&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of Common\Model\SlideModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\SlideModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_solid` [ RunTime:0.0070s ]
+NOTIC: [2] Missing argument 1 for Think\Page::__construct(), called in E:\WWW\guest2\Application\Common\Model\SlideModel.class.php on line 18 and defined E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+NOTIC: [8] Undefined variable: totalRows E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 45 行.
+SQL: SELECT * FROM `weibo_solid` ORDER BY id LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: page E:\WWW\guest2\Application\Runtime\Cache\Admin\176a5b3b0ba55302e03dbe584fc1f56b.php 第 106 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-22T19:41:20+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Keywords&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Model\KeyModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\KeyModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_key` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `weibo_key`  [ RunTime:0.0000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-11-22T19:41:23+08:00 ] 127.0.0.1 /guest2/admin.php?m=admin&c=Aboutus&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [2048] Declaration of Common\Model\AboutModel::data() should be compatible with that of Think\Model::data() E:\WWW\guest2\Application\Common\Model\AboutModel.class.php 第 6 行.
+SQL: SHOW COLUMNS FROM `weibo_about` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `weibo_about` LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2] Missing argument 1 for Think\Page::__construct(), called in E:\WWW\guest2\Application\Common\Model\AboutModel.class.php on line 18 and defined E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 42 行.
+NOTIC: [8] Undefined variable: totalRows E:\WWW\guest2\ThinkPHP\Library\Think\Page.class.php 第 45 行.
+SQL: SELECT * FROM `weibo_about` ORDER BY id LIMIT 0,20   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
